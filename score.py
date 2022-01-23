@@ -15,7 +15,7 @@ class Scoreboard(Turtle):
 
     def display(self):
         self.goto(250,250)
-        self.write(f"Score : {self.score}",align= "right", font=("Arial", 25, "normal"))
+        self.write(f"Score : {self.score}",align= "right", font=("Arial", 20, "normal"))
         self.goto(-270,250)
         self.write(f"High Score : {max(score_list)} ({score_list[max(score_list)]})", align="left", font=("Arial", 20, "normal"))
 
