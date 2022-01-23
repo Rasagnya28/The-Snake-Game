@@ -1,1 +1,1 @@
-score_list={"0": "no one", "16": "Rasagnya", "34": "Rasagnya", "46": "Rasagnya", "22": "Rasagnya , Rasagnya", "53": "Rasagnya , Rasagnya"}
+score_list={"0": "you are the first"}
