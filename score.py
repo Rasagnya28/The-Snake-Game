@@ -14,10 +14,10 @@ class Scoreboard(Turtle):
         self.display()
 
     def display(self):
-        self.goto(250,250)
-        self.write(f"Score : {self.score}",align= "right", font=("Arial", 20, "normal"))
-        self.goto(-270,250)
-        self.write(f"High Score : {max(score_list)} ({score_list[max(score_list)]})", align="left", font=("Arial", 20, "normal"))
+        self.goto(260,250)
+        self.write(f"Score : {self.score}",align= "right", font=("Courier", 16, "normal"))
+        self.goto(-280,250)
+        self.write(f"High Score : {max(score_list)}({score_list[max(score_list)]})", align="left", font=("Courier", 16, "normal"))
 
     def update_score(self):
         self.score+=1
@@ -35,7 +35,10 @@ class Scoreboard(Turtle):
             score_list[self.score]+=f" , {self.player}"
         file.write(f"score_list={json.dumps(score_list)}")
         file.close()
-        self.write("GAME OVER", align="center",font=("Arial", 25, "normal"))
+        self.write("GAME OVER", align="center",font=("Arial", 25, "bold"))
+        self.goto(0,-50)
+        self.color("dodger blue")
+        self.write(f"Your Score : {self.score}", align="center",font=("Sans-Serif", 22, "normal"))
 
 
 
